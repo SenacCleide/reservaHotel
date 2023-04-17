@@ -1,0 +1,38 @@
+{
+  "defaultAssembly": "Hotel.Infrastructure",
+  "modules": [
+    {
+      "type": "Hotel.WebApi.Module, Hotel.WebApi",
+
+      "properties": {
+      },
+      "TokenValidationDto": {
+        "Issuer": "17260E37-ED53-47AB-AD03-D3A6F9433456:3A950943-1659-4B66-9267-F152E80F01EF",
+        "Audience": "client_credentials",
+        "Claims": "HotelApi",
+        "Expires": 8,
+        "SigningCredentials": "3A950943-1659-4B66-9267-F152E80F01EF"
+      },
+      "Path": {
+        "Folder": "C:\\temp\\"
+      },
+    },
+    {
+      "type": "Hotel.Infrastructure.ApplicationModule",
+      "properties": {
+      }
+    },
+    {
+      "type": "Hotel.Infrastructure.Module",
+      "properties": {
+        "ConnectionString": "mongodb://localhost:27017",
+        "ConnectionSqlString": "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=Hotel;Integrated Security=True",
+        "booksCollectionNameUser": "users",
+        "BooksCollectionNameLog": "Log",
+        "booksCollectionNameStayHotel": "StayHotel",
+        "booksCollectionNameUserStay": "UserStay",
+        "DatabaseName": "Hotel"
+      }
+    }
+  ]
+}
