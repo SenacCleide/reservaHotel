@@ -1,6 +1,6 @@
 # Hotel API
 
-###### Api para gerenciamento de hotéis
+###### Api para gerenciamento de hoteis
 
 
 ## Sobre o projeto:
